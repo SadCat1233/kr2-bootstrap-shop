@@ -4,47 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>099 - Supply</title>
-  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
-  <header class="site-header header-sticky z-3">
-    <div class="site-header__inner align-items-center bg-body-tertiary d-flex flex-row py-2 w-100 px-5">
-      <a class="text-decoration-none fs-2" href="index.html">099</a>
-      <nav class="navbar navbar-expand-lg ms-auto">
-        <ul class="navbar-nav flex-row w-100 gap-2">
-          <li class="nav-item">
-            <a class="nav-link px-3 py-1" href="pages/catalog.html">Каталог</a>
+<body class="font-mono text-ink">
+  <header class="sticky top-0 z-[3] border-b border-border-soft bg-white">
+    <div class="flex w-full flex-row items-center bg-[#f8f9fa] px-12 py-2 tracking-[0.08em]">
+      <a class="text-[32px] uppercase text-ink no-underline" href="index.html">099</a>
+      <nav class="ml-auto">
+        <ul class="flex w-full flex-row gap-2">
+          <li>
+            <a class="nav-link" href="pages/catalog.html">Каталог</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-1" href="pages/product.html">Товар</a>
+          <li>
+            <a class="nav-link" href="pages/product.html">Товар</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-1" href="pages/order.html">Заявка</a>
+          <li>
+            <a class="nav-link" href="pages/order.html">Заявка</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-1" href="#contacts">Контакты</a>
+          <li>
+            <a class="nav-link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="hero d-flex align-items-end px-5 pb-5" aria-labelledby="hero-title">
-      <div class="row w-100 align-items-end gx-4 gy-4">
-        <div class="hero__content col-8">
-          <p class="hero__eyebrow">Black-on-white catalog</p>
-          <h1 class="hero__title" id="hero-title">099<br>Supply</h1>
-          <p class="hero__text mt-3">
+    <section class="flex min-h-[calc(100dvh-64px)] items-end border-b border-border-soft px-12 pt-20 pb-12" aria-labelledby="hero-title">
+      <div class="grid w-full grid-cols-3 items-end gap-6">
+        <div class="col-span-2 tracking-[0.8px]">
+          <p class="caption uppercase">Black-on-white catalog</p>
+          <h1 class="text-[140px] leading-[0.9] font-normal uppercase text-black" id="hero-title">099<br>Supply</h1>
+          <p class="mt-3 text-muted">
             Каталог монохромных mockup-объектов и интерфейсных компонентов для аккуратных цифровых витрин.
           </p>
-          <div class="hero__actions mt-5">
-            <a class="button button--primary px-3 py-2" href="pages/catalog.html">Смотреть каталог</a>
-            <a class="button button--ghost px-3 py-2" href="#popular">Популярное</a>
+          <div class="mt-10">
+            <a class="button-primary" href="pages/catalog.html">Смотреть каталог</a>
+            <a class="button-ghost" href="#popular">Популярное</a>
           </div>
         </div>
 
-        <div class="hero__counter col-4 d-flex flex-column align-items-end" aria-label="099">
+        <div class="flex flex-col items-end text-[220px] leading-[0.82] text-black" aria-label="099">
           <span>0</span>
           <span>9</span>
           <span>9</span>
@@ -53,57 +52,134 @@
     </section>
 
     <section class="section">
-      <div class="d-flex flex-row w-100 align-items-center justify-content-between mb-3">
-        <h2 class="section__title ms-5">Преимущества</h2>
-        <a class="section__link me-5 px-3 py-1" href="pages/catalog.html">К товарам</a>
+      <div class="section__header">
+        <h2 class="section-title">Преимущества</h2>
+        <a class="button-ghost" href="pages/catalog.html">К товарам</a>
       </div>
 
-      <div class="px-5">
-        <div class="advantages row row-cols-3 g-3">
-          <div class="col">
-            <article class="advantage-card d-flex flex-column h-100 p-3">
-              <span class="advantage-card__index">A-001</span>
-              <h3 class="advantage-card__title mt-auto mb-0">Единая сетка</h3>
-              <p class="advantage-card__text mt-4 mb-0">Все объекты собраны в ровные карточки с каталоговой подписью.</p>
-            </article>
-          </div>
+      <div class="grid grid-cols-3 gap-4">
+          <article class="advantage-card">
+            <span class="caption">A-001</span>
+            <h3 class="mt-auto text-base leading-[1.2] font-normal uppercase text-ink">Единая сетка</h3>
+            <p class="mt-4 text-xs text-muted">Все объекты собраны в ровные карточки с каталоговой подписью.</p>
+          </article>
 
-          <div class="col">
-            <article class="advantage-card d-flex flex-column h-100 p-3">
-              <span class="advantage-card__index">A-002</span>
-              <h3 class="advantage-card__title mt-auto mb-0">Чистые файлы</h3>
-              <p class="advantage-card__text mt-4 mb-0">Mockup-пакеты подготовлены для быстрой передачи в лендинги и презентации.</p>
-            </article>
-          </div>
+          <article class="advantage-card">
+            <span class="caption">A-002</span>
+            <h3 class="mt-auto text-base leading-[1.2] font-normal uppercase text-ink">Чистые файлы</h3>
+            <p class="mt-4 text-xs text-muted">Mockup-пакеты подготовлены для быстрой передачи в лендинги и презентации.</p>
+          </article>
 
-          <div class="col">
-            <article class="advantage-card d-flex flex-column h-100 p-3">
-              <span class="advantage-card__index">A-003</span>
-              <h3 class="advantage-card__title mt-auto mb-0">Нейтральный стиль</h3>
-              <p class="advantage-card__text mt-4 mb-0">Черно-белые объекты не спорят с брендом и держат фокус на форме.</p>
-            </article>
-          </div>
-        </div>
+          <article class="advantage-card">
+            <span class="caption">A-003</span>
+            <h3 class="mt-auto text-base leading-[1.2] font-normal uppercase text-ink">Нейтральный стиль</h3>
+            <p class="mt-4 text-xs text-muted">Черно-белые объекты не спорят с брендом и держат фокус на форме.</p>
+          </article>
       </div>
     </section>
 
-    <section class="section section--compact px-5" id="contacts" aria-labelledby="contacts-title">
-      <div class="section__header d-flex align-items-center justify-content-between mb-3">
-        <h2 class="section__title" id="contacts-title">Контакты</h2>
-        <a class="section__link px-3 py-2" href="pages/order.html">Оставить заявку</a>
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section-title">Популярное</h2>
+        <a class="button-ghost" href="pages/catalog.html">Весь каталог</a>
       </div>
 
-      <aside class="contact-panel d-flex align-items-center justify-content-between p-3">
-        <p class="contact-panel__text">Пишите для подбора mockup-набора или сборки витрины под конкретный запуск.</p>
-        <a class="button button--primary px-3 py-2" href="mailto:hello@099.supply">hello@099.supply</a>
+      <div class="grid grid-cols-4 gap-3">
+        <article class="product-card relative">
+          <span class="product-card__badge absolute top-3 left-3">Хит</span>
+          <div class="product-card__visual">
+            <svg class="product-card__icon" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.5,3 C7.67157288,3 7,3.67157288 7,4.5 L7,19.5 C7,20.3284271 7.67157288,21 8.5,21 L15.5113578,21 C16.3397849,21 17.0113578,20.3284271 17.0113578,19.5 L17.0113578,4.5 C17.0113578,3.67157288 16.3397849,3 15.5113578,3 L15.4999997,3 C15.2238576,3 15,3.22385763 15,3.5 C15,4.32842712 14.3284271,5 13.5,5 L10.5,5 C9.67157288,5 9,4.32842712 9,3.5 C9,3.22385763 8.77614237,3 8.5,3 Z M9.91464715,3 C9.96992289,3.15638946 10,3.32468229 10,3.5 C10,3.77614237 10.2238576,4 10.5,4 L13.5,4 C13.7761424,4 14,3.77614237 14,3.5 C14,3.32468229 14.0300771,3.15638946 14.0853529,3 L9.91464715,3 L9.91464715,3 Z M6,4.5 C6,3.11928813 7.11928813,2 8.5,2 L15.5113578,2 C16.8920696,2 18.0113578,3.11928813 18.0113578,4.5 L18.0113578,19.5 C18.0113578,20.8807119 16.8920696,22 15.5113578,22 L8.5,22 C7.11928813,22 6,20.8807119 6,19.5 L6,4.5 Z"></path> </g></svg>
+          </div>
+          <div class="product-card__meta">
+            <span>M-005</span>
+            <span>IPhone</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">IPhone Mockup</h3>
+            <p class="product-card__description">Черный смартфон на белой плоскости для промо-блоков.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">1 900 ₽</span>
+              <a class="button-ghost" href="pages/product.html">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__visual">
+            <svg class="product-card__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.5 19H15.5C17.83 19 19 17.83 19 15.5V8.5C19 6.17 17.83 5 15.5 5H8.5C6.17 5 5 6.17 5 8.5V15.5C5 17.83 6.17 19 8.5 19Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 2H8" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 22H8" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11.5 9.5V12.5H14.5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          </div>
+          <div class="product-card__meta">
+            <span>M-011</span>
+            <span>Watch</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Watch Mockup</h3>
+            <p class="product-card__description">Компактный объект для карточек аксессуаров и UI-показов.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">1 600 ₽</span>
+              <a class="button-ghost" href="pages/product.html">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card relative">
+          <span class="product-card__badge absolute top-3 left-3">Новинка</span>
+          <div class="product-card__visual">
+            <svg class="product-card__icon" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 413.192 413.192" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_328_" d="M407.907,103.244l-74.53-82.445c-1.706-1.888-4.132-2.965-6.676-2.965h-22.225L282.771,1.815 C282.022,1.25,280.68,0,277.255,0H135.936c-2.715,0-4.686,1.189-5.512,1.813l-21.705,16.021H86.491c-2.544,0-4.97,1.077-6.676,2.965 l-74.53,82.445c-1.656,1.831-2.486,4.263-2.297,6.724l19.669,256.273c0.36,4.688,4.269,8.311,8.971,8.312l24.161,0.007 l13.432,33.023c1.379,3.392,4.676,5.609,8.337,5.609h258.076c3.661,0,6.958-2.218,8.337-5.609l13.432-33.023l24.163-0.007 c4.703-0.001,8.611-3.623,8.971-8.312l19.667-256.273C410.394,107.507,409.563,105.075,407.907,103.244z M144.843,18H268.35v8.834 c0,21.048-17.123,38.171-38.168,38.171h-47.168c-21.047,0-38.17-17.123-38.17-38.171V18z M39.967,356.555l-1.589-20.701h47.583 l-1.196,20.714L39.967,356.555z M373.228,356.555l-44.798,0.013l-1.196-20.714h47.583L373.228,356.555z M376.198,317.854h-50.004 l-6.915-119.767c3.021,1.93,7.036,1.935,10.117-0.29c4.029-2.911,4.936-8.536,2.026-12.565l-15.473-21.422 c-0.042-0.059-0.084-0.117-0.127-0.176l-15.483-21.435c-2.911-4.029-8.536-4.937-12.566-2.026c-4.029,2.91-4.936,8.536-2.026,12.565 l14.004,19.387l11.199,193.964c0.275,4.762,4.216,8.481,8.985,8.481c0.001,0,0.002,0,0.002,0l18.033-0.005l-8.39,20.627H83.613 l-8.39-20.627l18.034,0.005c0.001,0,0.001,0,0.002,0c4.769,0,8.71-3.721,8.985-8.481l11.199-193.965l14.003-19.385 c2.911-4.029,2.004-9.655-2.025-12.566c-4.028-2.908-9.655-2.004-12.565,2.025L81.771,185.23c-2.911,4.029-2.004,9.655,2.025,12.566 c3.082,2.226,7.099,2.218,10.119,0.289L87,317.854H36.997L21.231,112.446l69.257-76.612h21.193c1.924,0,3.797-0.616,5.345-1.759 l9.817-7.246v0.005c0,30.973,25.198,56.171,56.17,56.171h47.168c30.972,0,56.168-25.198,56.168-56.171v-0.007l9.821,7.248 c1.548,1.143,3.421,1.759,5.344,1.759h21.189l69.257,76.612L376.198,317.854z M124.914,356.568H288.28c4.971,0,9,4.029,9,9 s-4.029,9-9,9H124.914c-4.971,0-9-4.029-9-9S119.943,356.568,124.914,356.568z"></path> </g></svg>
+          </div>
+          <div class="product-card__meta">
+            <span>M-017</span>
+            <span>Hoodie</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Hoodie Mockup</h3>
+            <p class="product-card__description">Мягкий силуэт для коллекций мерча, капсул и preorder-страниц.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">2 400 ₽</span>
+              <a class="button-ghost" href="pages/product.html">Подробнее</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__visual">
+            <svg class="product-card__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"></path> </g></svg>
+          </div>
+          <div class="product-card__meta">
+            <span>M-022</span>
+            <span>Display</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Display Mockup</h3>
+            <p class="product-card__description">Плоский экран для демонстрации сайтов, кабинетов и дашбордов.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">2 100 ₽</span>
+              <a class="button-ghost" href="pages/product.html">Подробнее</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section mb-20" id="contacts" aria-labelledby="contacts-title">
+      <div class="section__header">
+        <h2 class="section-title" id="contacts-title">Контакты</h2>
+        <a class="button-ghost" href="pages/order.html">Оставить заявку</a>
+      </div>
+
+      <aside class="flex min-h-[72px] items-center justify-between rounded-lg border border-border-subtle p-3">
+        <p class="max-w-[620px] text-xs leading-[1.5] tracking-[0.8px] text-muted">Пишите для подбора mockup-набора или сборки витрины под конкретный запуск.</p>
+        <a class="button-primary" href="mailto:hello@099.supply">hello@099.supply</a>
       </aside>
     </section>
   </main>
 
-  <a class="floating-order position-fixed z-3 fs-2 d-grid" href="pages/order.html"><span class="floating-order__icon d-block">+</span></a>
+  <a class="fixed right-4 bottom-4 z-[3] grid h-[42px] w-[42px] place-items-center rounded-full border border-ink bg-ink text-[32px] text-white" href="pages/order.html">
+    <span class="block -translate-y-[5px]">+</span>
+  </a>
 
-  <footer class="site-footer pt-3 ps-5">
-    <p class="site-footer__text mt-0">099 Supply / curated digital objects / 2026</p>
+  <footer class="border-t border-border-subtle py-[15px] pl-12">
+    <p class="caption uppercase">099 Supply / curated digital objects / 2026</p>
   </footer>
 </body>
 </html>

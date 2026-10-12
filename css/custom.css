@@ -1,227 +1,90 @@
-:root {
-  --color-canvas-white: #ffffff;
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "Soehne Mono", "JetBrains Mono", "IBM Plex Mono", "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --color-ink: #101010;
-  --color-charcoal: #000000;
-  --color-muted-hard: #222222;
   --color-muted: #555555;
   --color-muted-soft: #999999;
   --color-border-soft: #c8c8c8;
   --color-border-subtle: #e0e0e0;
-
-  --font-soehne-mono: "Soehne Mono", "JetBrains Mono", "IBM Plex Mono", "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-
-  --text-caption: 10px;
-  --leading-caption: 1.2;
-  --tracking-caption: 0.8px;
-  --text-label: 26px;
-  --leading-label: 1.2;
-  --tracking-label: 4.68px;
-  --text-display: 54px;
-  --leading-display: 1;
-  --tracking-display: 1.35px;
-
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-
-  --spacing-4: 4px;
-  --spacing-5: 5px;
-  --spacing-6: 6px;
-  --spacing-8: 8px;
-  --spacing-10: 10px;
-  --spacing-11: 11px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-40: 40px;
-  --spacing-80: 80px;
-
-  --radius-md: 4px;
-  --radius-lg: 8px;
-  --radius-full: 999px;
-  --radius-full-2: 9999px;
 }
 
-html {
-    scroll-behavior: smooth;
+@layer base {
+  a {
+    @apply uppercase;
+  }
 }
 
-a {
-    text-decoration: none;
+@utility nav-link {
+  @apply rounded-full border border-transparent px-3 py-1 text-sm text-muted hover:border-ink hover:text-ink;
 }
 
-.site-header {
-    border-bottom: 1px solid var(--color-border-soft);
-    background-color: var(--color-canvas-white);
+@utility button-primary {
+  @apply rounded-full border border-black bg-black px-2 py-[6px] text-[12px] uppercase text-white tracking-[0.04em];
 }
 
-.site-header__inner {
-    letter-spacing: 0.08em;
+@utility button-ghost {
+  @apply rounded-full border border-border-subtle px-2 py-[6px] text-[12px] uppercase text-muted tracking-[0.04em];
 }
 
-.site-header__inner a {
-    color: var(--color-ink);
+@utility section-title {
+  @apply text-[26px] leading-[1.2] font-medium uppercase tracking-[4.68px] text-muted-soft;
 }
 
-.nav-item {
-    font-size: 14px;
+@utility caption {
+  @apply text-[10px] leading-[1.2] tracking-[0.8px] text-muted;
 }
 
-.nav-item a {
-    color: var(--color-muted);
-    border: 1px solid transparent;
-    border-radius: var(--radius-full-2);
+@utility advantage-card {
+  @apply flex min-h-[200px] h-full flex-col rounded-lg border border-border-soft p-3;
 }
 
-.nav-item a:hover {
-    border: 1px solid var(--color-ink);
-    color: var(--color-ink);
+@utility section__header {
+  @apply mb-3 flex items-center justify-between;
 }
 
-
-.hero {
-  min-height: calc(100dvh - 64px);
-  padding-top: 80px;
+@utility section {
+  @apply mt-20 mx-12;
 }
 
-.hero__title,
-.button--primary,
-.button--ghost,
-.site-header__inner,
-.section__title,
-.section__link,
-.advantage-card__title,
-.hero__eyebrow {
-    text-transform: uppercase;
+@utility product-card {
+  @apply rounded-lg border border-border-soft;
 }
 
-.hero__title {
-    font-size: 140px;
-    line-height: 0.9;
-    font-weight: var(--font-weight-regular);
-    color: var(--color-charcoal);
+@utility product-card__price {
+  @apply text-[12px] tracking-[0.04em] leading-[1.5];
 }
 
-.hero__content {
-    letter-spacing: var(--tracking-caption);
+@utility product-card__footer {
+  @apply flex items-center justify-between mt-3;
 }
 
-.hero__counter {
-    font-size: 220px;
-    color: var(--color-charcoal);
-    line-height: 0.82;
-    letter-spacing: 0;
+@utility product-card__title {
+  @apply uppercase tracking-[0.04em] leading-[1.5];
 }
 
-.hero__text {
-    color: var(--color-muted);
+@utility product-card__description {
+  @apply mt-3 text-[12px] text-muted;
 }
 
-.button--ghost,
-.section__link,
-.button--primary {
-    border: 1px solid;
-    border-radius: var(--radius-full);
-    font-size: 12px;
+@utility product-card__meta {
+  @apply flex items-center justify-between uppercase text-[10px] text-muted tracking-[0.04em] leading-normal;
+  @apply border-y border-border-soft py-[10px] px-[12px];
 }
 
-.section__link,
-.button--ghost {
-    color: var(--color-muted);
+@utility product-card__body {
+  @apply m-3;
 }
 
-.button--primary {
-    background-color: var(--color-charcoal);
-    border-color: var(--color-charcoal);
-    color: var(--color-canvas-white);
+@utility product-card__visual {
+  @apply flex h-[220px] items-center justify-center;
 }
 
-.advantage-card__index,
-.hero__eyebrow {
-    font-size: var(--text-caption);
-    color: var(--color-muted);
+@utility product-card__icon {
+  @apply h-20 w-20;
 }
 
-.hero {
-    border-bottom: 1px solid var(--color-border-soft);
-}
-
-.section {
-    margin-top: 80px;
-}
-
-.section__title {
-    color: var(--color-muted-soft);
-    font-size: var(--text-label);
-    font-weight: var(--font-weight-medium);
-    line-height: var(--leading-label);
-    letter-spacing: var(--tracking-label);
-}
-
-.advantage-card {
-    min-height: 200px;
-    border: 1px solid var(--color-border-soft);
-    border-radius: var(--radius-lg);
-}
-
-.advantage-card__index {
-    letter-spacing: var(--tracking-caption);
-    line-height: var(--leading-caption);
-}
-
-.advantage-card__title {
-    font-size: 16px;
-    font-weight: var(--font-weight-regular);
-    line-height: 1.2;
-    color: var(--color-ink);
-}
-
-.advantage-card__text {
-    font-size: 12px;
-    color: var(--color-muted);
-}
-
-.section--compact {
-    padding-bottom: var(--spacing-80);
-}
-
-.contact-panel {
-    min-height: 72px;
-    border: 1px solid var(--color-border-subtle);
-    border-radius: var(--radius-lg);
-}
-
-.contact-panel__text {
-    max-width: 620px;
-    margin: 0;
-    color: var(--color-muted);
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: var(--tracking-caption);
-}
-
-.floating-order {
-    width: 42px;
-    height: 42px;
-    place-items: center;
-    right: var(--spacing-16);
-    bottom: var(--spacing-16);
-    border: 1px solid var(--color-ink);
-    border-radius: var(--radius-full);
-    color: var(--color-canvas-white);
-    background: var(--color-ink);
-}
-
-.floating-order__icon {
-    transform: translateY(-2px);
-}
-
-.site-footer {
-  border-top: 1px solid var(--color-border-subtle);
-}
-
-.site-footer__text {
-  color: var(--color-muted);
-  font-size: var(--text-caption);
-  line-height: var(--leading-caption);
-  letter-spacing: var(--tracking-caption);
-  text-transform: uppercase;
+@utility product-card__badge {
+  @apply uppercase text-[10px] tracking-[0.04em] leading-[1.5] text-muted;
+  @apply border border-border-soft px-[4px] py-[3px];
 }

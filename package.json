@@ -1,0 +1,25 @@
+{
+  "name": "kr2-bootstrap-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/custom.css -o ./css/output.css",
+    "watch": "tailwindcss -i ./css/custom.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SadCat1233/kr2-bootstrap-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SadCat1233/kr2-bootstrap-shop/issues"
+  },
+  "homepage": "https://github.com/SadCat1233/kr2-bootstrap-shop#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.3"
+  }
+}
