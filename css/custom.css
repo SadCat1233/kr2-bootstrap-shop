@@ -16,18 +16,22 @@
 }
 
 @utility nav-link {
-  @apply rounded-full border border-transparent px-3 py-1 text-sm text-muted hover:border-ink hover:text-ink;
+  @apply rounded-full border border-transparent px-3 py-1 text-sm text-muted hover:border-border-soft hover:text-ink;
+}
+
+@utility nav-link__active {
+  @apply rounded-full border border-border-soft px-3 py-1 text-sm text-ink hover:text-ink;
 }
 
 @utility button-primary {
-  @apply rounded-full border border-black bg-black px-2 py-[6px] text-[12px] uppercase text-white tracking-[0.04em];
+  @apply rounded-full border border-black bg-black px-2 py-1.5 text-[12px] uppercase text-white tracking-[0.04em];
 }
 
 @utility button-ghost {
-  @apply rounded-full border border-border-subtle px-2 py-[6px] text-[12px] uppercase text-muted tracking-[0.04em];
+  @apply rounded-full border border-border-subtle px-2 py-1.5 text-[12px] uppercase text-muted tracking-[0.04em];
 }
 
-@utility section-title {
+@utility section__title {
   @apply text-[26px] leading-[1.2] font-medium uppercase tracking-[4.68px] text-muted-soft;
 }
 
@@ -36,7 +40,7 @@
 }
 
 @utility advantage-card {
-  @apply flex min-h-[200px] h-full flex-col rounded-lg border border-border-soft p-3;
+  @apply flex min-h-50 h-full flex-col rounded-lg border border-border-soft p-3;
 }
 
 @utility section__header {
@@ -44,7 +48,7 @@
 }
 
 @utility section {
-  @apply mt-20 mx-12;
+  @apply pt-20 px-12;
 }
 
 @utility product-card {
@@ -52,7 +56,7 @@
 }
 
 @utility product-card__price {
-  @apply text-[12px] tracking-[0.04em] leading-[1.5];
+  @apply text-xs tracking-[0.04em] leading-normal;
 }
 
 @utility product-card__footer {
@@ -60,7 +64,7 @@
 }
 
 @utility product-card__title {
-  @apply uppercase tracking-[0.04em] leading-[1.5];
+  @apply uppercase tracking-[0.04em] leading-normal;
 }
 
 @utility product-card__description {
@@ -69,22 +73,27 @@
 
 @utility product-card__meta {
   @apply flex items-center justify-between uppercase text-[10px] text-muted tracking-[0.04em] leading-normal;
-  @apply border-y border-border-soft py-[10px] px-[12px];
-}
-
-@utility product-card__body {
-  @apply m-3;
-}
-
-@utility product-card__visual {
-  @apply flex h-[220px] items-center justify-center;
-}
-
-@utility product-card__icon {
-  @apply h-20 w-20;
+  @apply border-y border-border-soft py-2.5 px-2.5;
 }
 
 @utility product-card__badge {
-  @apply uppercase text-[10px] tracking-[0.04em] leading-[1.5] text-muted;
-  @apply border border-border-soft px-[4px] py-[3px];
+  @apply uppercase text-[10px] tracking-[0.04em] leading-normal text-muted;
+  @apply border border-border-soft px-1 py-0.75;
+}
+
+@utility page-hero {
+  @apply pt-20 pb-10 px-10;
+  @apply border-b border-border-soft;
+}
+
+@utility page-hero__eyebrow {
+  @apply text-muted text-[10px] uppercase;
+}
+
+@utility page-hero__title {
+  @apply text-ink text-[124px] uppercase leading-none;
+}
+
+@utility page-hero__text {
+  @apply max-w-[62ch] text-muted;
 }

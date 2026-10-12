@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>099 - Supply</title>
+  <link rel="stylesheet" href="../css/output.css">
+</head>
+<body class="font-mono text-ink">
+  <header class="sticky top-0 z-3 border-b border-border-soft bg-white">
+    <div class="flex w-full flex-row items-center bg-[#f8f9fa] px-12 py-2 tracking-[0.08em]">
+      <a class="text-[32px] uppercase text-ink no-underline" href="../index.html">099</a>
+      <nav class="ml-auto">
+        <ul class="flex w-full flex-row gap-2">
+          <li>
+            <a class="nav-link" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="nav-link__active" href="product.html">Товар</a>
+          </li>
+          <li>
+            <a class="nav-link" href="order.html">Заявка</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero" aria-labelledby="product-title">
+      <p class="page-hero__eyebrow">Product card / M 005</p>
+      <h1 class="page-hero__title" id="product-title">iPhone Mockup</h1>
+      <p class="page-hero__text">
+        Черный смартфон на чистой белой плоскости для промо-блоков, презентаций, витрин и карточек цифровых продуктов.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="product-detail-title">
+      <div class="section__header">
+        <h2 class="section__title" id="product-detail-title">Карточка</h2>
+        <a class="button-ghost" href="#specs">Характеристики</a>
+      </div>
+
+      <div class="flex gap-4 relative">
+        <article class="border border-border-soft rounded-lg w-[60vw] flex flex-col justify-between" aria-label="Визуальный превью товара">
+          <span class="product-card__badge absolute top-3 left-3">Хит</span>
+          <div class="flex h-75 items-center justify-center" aria-hidden="true">
+            <svg class="h-60 w-60" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.5,3 C7.67157288,3 7,3.67157288 7,4.5 L7,19.5 C7,20.3284271 7.67157288,21 8.5,21 L15.5113578,21 C16.3397849,21 17.0113578,20.3284271 17.0113578,19.5 L17.0113578,4.5 C17.0113578,3.67157288 16.3397849,3 15.5113578,3 L15.4999997,3 C15.2238576,3 15,3.22385763 15,3.5 C15,4.32842712 14.3284271,5 13.5,5 L10.5,5 C9.67157288,5 9,4.32842712 9,3.5 C9,3.22385763 8.77614237,3 8.5,3 Z M9.91464715,3 C9.96992289,3.15638946 10,3.32468229 10,3.5 C10,3.77614237 10.2238576,4 10.5,4 L13.5,4 C13.7761424,4 14,3.77614237 14,3.5 C14,3.32468229 14.0300771,3.15638946 14.0853529,3 L9.91464715,3 L9.91464715,3 Z M6,4.5 C6,3.11928813 7.11928813,2 8.5,2 L15.5113578,2 C16.8920696,2 18.0113578,3.11928813 18.0113578,4.5 L18.0113578,19.5 C18.0113578,20.8807119 16.8920696,22 15.5113578,22 L8.5,22 C7.11928813,22 6,20.8807119 6,19.5 L6,4.5 Z"></path> </g></svg>
+          </div>
+          <div class="uppercase text-xs text-muted flex items-center justify-between border-t border-border-soft py-3 px-3">
+            <span>M 005</span>
+            <span>iPhone</span>
+          </div>
+        </article>
+
+        <aside class="border border-border-soft rounded-lg p-3 w-[40vw]" aria-labelledby="product-info-title">
+          <span class="text-xs text-muted tracking-[0.04em]">P 001</span>
+          <h3 class="uppercase text-[16px] text-ink mt-7.5" id="product-info-title">Digital object</h3>
+          <p class="text-xs text-muted mt-7.5 mb-20">
+            Mockup подходит для демонстрации мобильных интерфейсов, карточек приложений, SaaS-превью и product-shot секций.
+            Объект сохраняет монохромную эстетику каталога и не конфликтует с брендом проекта.
+          </p>
+
+          <div class="flex items-center justify-between pt-2.5 border-t border-border-soft">
+            <span class="uppercase text-xs text-muted">Цена</span>
+            <strong class="text-[26px] tracking-[0.08em] text-ink leading-[1.2] font-medium">1 900 ₽</strong>
+          </div>
+
+          <div class="flex items-center justify-end gap-3 mt-10">
+            <a class="button-primary" id="open-modal">Оставить заявку</a>
+            <a class="button-ghost" href="../index.html#popular">К популярному</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section pb-20" id="specs" aria-labelledby="specs-title">
+      <div class="section__header">
+        <h2 class="section__title" id="specs-title">Параметры</h2>
+        <a class="button-ghost" href="contacts.html">Задать вопрос</a>
+      </div>
+
+      <div class="border rounded-lg border-border-subtle overflow-x-auto text-[12px] font-normal">
+        <table class="border-collapse w-full">
+          <caption class="py-3 border-b border-border-subtle text-left pl-4 text-muted text-[10px] uppercase tracking-[0.8px] leading-normal">Характеристики товара M 005 / iPhone Mockup</caption>
+          <thead class="text-muted-soft text-normal text-left tracking-[0.12em]">
+            <tr>
+              <th class="px-4 py-3 border-b border-border-subtle text-left align-top uppercase" scope="col">Параметр</th>
+              <th class="px-4 py-3 border-b border-border-subtle text-left align-top uppercase" scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody class="">
+            <tr>
+              <th class="px-4 py-3 border-b border-border-subtle text-left align-top" scope="row">Категория</th>
+              <td class="px-4 py-3 border-b border-border-subtle text-left align-top text-muted">Mockup-объект для цифровой витрины</td>
+            </tr>
+            <tr>
+              <th class="px-4 py-3 border-b border-border-subtle text-left align-top" scope="row">Формат передачи</th>
+              <td class="px-4 py-3 border-b border-border-subtle text-left align-top text-muted">PNG / SVG-ready контур / web preview</td>
+            </tr>
+            <tr>
+              <th class="px-4 py-3 border-b border-border-subtle text-left align-top" scope="row">Цветовая система</th>
+              <td class="px-4 py-3 border-b border-border-subtle text-left align-top text-muted">Монохром: #101010 на #ffffff</td>
+            </tr>
+            <tr>
+              <th class="px-4 py-3 border-b border-border-subtle text-left align-top" scope="row">Использование</th>
+              <td class="px-4 py-3 border-b border-border-subtle text-left align-top text-muted">Лендинги, каталоги, презентации, карточки приложений</td>
+            </tr>
+            <tr>
+              <th class="px-4 py-3 border-b border-border-subtle text-left align-top" scope="row">Срок подготовки</th>
+              <td class="px-4 py-3 border-b border-border-subtle text-left align-top text-muted">1 рабочий день после подтверждения заявки</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <dialog id="product-modal" class="m-auto w-[min(560px,calc(100%-32px))] max-w-none rounded-lg border border-border-soft bg-white p-4 text-ink backdrop:bg-black/70">
+      <div>
+        <div class="flex items-center justify-between border-b border-border-subtle pb-3">
+          <span class="text-[10px] tracking-[0.08em] text-muted">Q 001</span>
+          <button class="flex h-8 w-8 items-center justify-center rounded-full border border-border-subtle text-xs text-muted hover:border-border-soft hover:text-ink" id="close-modal" type="button" aria-label="Закрыть окно">X</button>
+        </div>
+
+        <h2 class="mt-4 text-base leading-normal font-normal uppercase tracking-[0.04em]" id="quick-order-title">Быстрая заявка</h2>
+        <p class="mt-2 text-xs leading-normal text-muted">
+          Оставьте контакты, и мы подготовим iPhone Mockup к передаче.
+        </p>
+
+        <form class="mt-4" action="#" method="post">
+          <div class="mb-3">
+            <label class="mb-2 block text-[10px] uppercase tracking-[0.08em] text-muted" for="modal-name">Имя</label>
+            <input class="h-10 w-full rounded border border-border-subtle px-3 text-xs text-ink placeholder:text-muted-soft focus:border-ink focus:outline-none" id="modal-name" name="name" type="text" placeholder="Ваше имя" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-2 block text-[10px] uppercase tracking-[0.08em] text-muted" for="modal-email">E-mail</label>
+            <input class="h-10 w-full rounded border border-border-subtle px-3 text-xs text-ink placeholder:text-muted-soft focus:border-ink focus:outline-none" id="modal-email" name="email" type="email" placeholder="mail@example.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-2 block text-[10px] uppercase tracking-[0.08em] text-muted" for="modal-phone">Телефон</label>
+            <input class="h-10 w-full rounded border border-border-subtle px-3 text-xs text-ink placeholder:text-muted-soft focus:border-ink focus:outline-none" id="modal-phone" name="phone" type="tel" placeholder="+7 999 000-00-00">
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-2 block text-[10px] uppercase tracking-[0.08em] text-muted" for="modal-product">Товар</label>
+            <input class="h-10 w-full rounded border border-border-subtle px-3 text-xs text-ink focus:border-ink focus:outline-none" id="modal-product" name="product" type="text" value="iPhone Mockup" readonly>
+          </div>
+
+          <label class="flex items-center gap-2 text-xs text-muted">
+            <input class="h-4 w-4 rounded border-border-soft accent-ink" name="agreement" type="checkbox" required>
+            <span>Согласен на обработку данных</span>
+          </label>
+
+          <div class="mt-4 flex items-center justify-end gap-3">
+            <button class="rounded-full border border-border-subtle px-3 py-2 text-[12px] uppercase tracking-[0.04em] text-muted hover:border-border-soft hover:text-ink" id="close-modal-form" type="button">Закрыть</button>
+            <button class="rounded-full border border-black bg-black px-3 py-2 text-[12px] uppercase tracking-[0.04em] text-white" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <script>
+      const openModal = document.querySelector('#open-modal');
+      const productModal = document.querySelector('#product-modal');
+
+      openModal.addEventListener('click', () => {
+        productModal.showModal();
+      });
+
+      document.querySelector('#close-modal').addEventListener('click', () => {
+        productModal.close();
+      });
+
+      document.querySelector('#close-modal-form').addEventListener('click', () => {
+        productModal.close();
+      });
+    </script>
+  </main>
+  <footer class="border-t border-border-subtle py-3.75 pl-12">
+    <p class="caption uppercase">099 Supply / curated digital objects / 2026</p>
+  </footer>
+</body>
+</html>
