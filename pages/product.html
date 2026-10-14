@@ -8,10 +8,10 @@
 </head>
 <body class="font-mono text-ink">
   <header class="sticky top-0 z-3 border-b border-border-soft bg-white">
-    <div class="flex w-full flex-row items-center bg-[#f8f9fa] px-12 py-2 tracking-[0.08em]">
+    <div class="flex w-full flex-wrap items-center gap-y-2 bg-[#f8f9fa] px-4 py-2 tracking-[0.08em] sm:px-6 lg:px-12">
       <a class="text-[32px] uppercase text-ink no-underline" href="../index.html">099</a>
-      <nav class="ml-auto">
-        <ul class="flex w-full flex-row gap-2">
+      <nav class="ml-auto max-sm:ml-0 max-sm:w-full">
+        <ul class="flex w-full flex-wrap justify-end gap-2 max-sm:justify-start max-sm:gap-1">
           <li>
             <a class="nav-link" href="catalog.html">Каталог</a>
           </li>
@@ -43,8 +43,8 @@
         <a class="button-ghost" href="#specs">Характеристики</a>
       </div>
 
-      <div class="flex gap-4 relative">
-        <article class="border border-border-soft rounded-lg w-[60vw] flex flex-col justify-between" aria-label="Визуальный превью товара">
+      <div class="relative flex flex-col gap-4 lg:flex-row">
+        <article class="flex w-full flex-col justify-between rounded-lg border border-border-soft lg:w-[60vw]" aria-label="Визуальный превью товара">
           <span class="product-card__badge absolute top-3 left-3">Хит</span>
           <div class="flex h-75 items-center justify-center" aria-hidden="true">
             <svg class="h-60 w-60" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.5,3 C7.67157288,3 7,3.67157288 7,4.5 L7,19.5 C7,20.3284271 7.67157288,21 8.5,21 L15.5113578,21 C16.3397849,21 17.0113578,20.3284271 17.0113578,19.5 L17.0113578,4.5 C17.0113578,3.67157288 16.3397849,3 15.5113578,3 L15.4999997,3 C15.2238576,3 15,3.22385763 15,3.5 C15,4.32842712 14.3284271,5 13.5,5 L10.5,5 C9.67157288,5 9,4.32842712 9,3.5 C9,3.22385763 8.77614237,3 8.5,3 Z M9.91464715,3 C9.96992289,3.15638946 10,3.32468229 10,3.5 C10,3.77614237 10.2238576,4 10.5,4 L13.5,4 C13.7761424,4 14,3.77614237 14,3.5 C14,3.32468229 14.0300771,3.15638946 14.0853529,3 L9.91464715,3 L9.91464715,3 Z M6,4.5 C6,3.11928813 7.11928813,2 8.5,2 L15.5113578,2 C16.8920696,2 18.0113578,3.11928813 18.0113578,4.5 L18.0113578,19.5 C18.0113578,20.8807119 16.8920696,22 15.5113578,22 L8.5,22 C7.11928813,22 6,20.8807119 6,19.5 L6,4.5 Z"></path> </g></svg>
@@ -55,10 +55,10 @@
           </div>
         </article>
 
-        <aside class="border border-border-soft rounded-lg p-3 w-[40vw]" aria-labelledby="product-info-title">
+        <aside class="w-full rounded-lg border border-border-soft p-3 lg:w-[40vw]" aria-labelledby="product-info-title">
           <span class="text-xs text-muted tracking-[0.04em]">P 001</span>
           <h3 class="uppercase text-[16px] text-ink mt-7.5" id="product-info-title">Digital object</h3>
-          <p class="text-xs text-muted mt-7.5 mb-20">
+          <p class="mt-7.5 mb-12 text-xs text-muted lg:mb-20">
             Mockup подходит для демонстрации мобильных интерфейсов, карточек приложений, SaaS-превью и product-shot секций.
             Объект сохраняет монохромную эстетику каталога и не конфликтует с брендом проекта.
           </p>
@@ -68,7 +68,7 @@
             <strong class="text-[26px] tracking-[0.08em] text-ink leading-[1.2] font-medium">1 900 ₽</strong>
           </div>
 
-          <div class="flex items-center justify-end gap-3 mt-10">
+          <div class="mt-10 flex items-center justify-end gap-3 max-sm:flex-col max-sm:items-stretch">
             <a class="button-primary" id="open-modal">Оставить заявку</a>
             <a class="button-ghost" href="../index.html#popular">К популярному</a>
           </div>
@@ -217,7 +217,7 @@
       });
     </script>
   </main>
-  <footer class="border-t border-border-subtle py-3.75 pl-12">
+  <footer class="border-t border-border-subtle py-3.75 pl-4 sm:pl-6 lg:pl-12">
     <p class="caption uppercase">099 Supply / curated digital objects / 2026</p>
   </footer>
 </body>

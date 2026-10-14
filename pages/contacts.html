@@ -8,10 +8,10 @@
 </head>
 <body class="font-mono text-ink">
   <header class="sticky top-0 z-3 border-b border-border-soft bg-white">
-    <div class="flex w-full flex-row items-center bg-[#f8f9fa] px-12 py-2 tracking-[0.08em]">
+    <div class="flex w-full flex-wrap items-center gap-y-2 bg-[#f8f9fa] px-4 py-2 tracking-[0.08em] sm:px-6 lg:px-12">
       <a class="text-[32px] uppercase text-ink no-underline" href="../index.html">099</a>
-      <nav class="ml-auto">
-        <ul class="flex w-full flex-row gap-2">
+      <nav class="ml-auto max-sm:ml-0 max-sm:w-full">
+        <ul class="flex w-full flex-wrap justify-end gap-2 max-sm:justify-start max-sm:gap-1">
           <li>
             <a class="nav-link" href="catalog.html">Каталог</a>
           </li>
@@ -31,7 +31,7 @@
   <main>
     <section class="page-hero" aria-labelledby="contacts-title">
       <p class="page-hero__eyebrow">Contact desk</p>
-      <h1 class="page-hero__title max-md:text-[64px]" id="contacts-title">Контакты</h1>
+      <h1 class="page-hero__title" id="contacts-title">Контакты</h1>
       <p class="page-hero__text">
         Напишите, если нужен готовый mockup-набор, подбор объектов для каталога или аккуратная витрина под запуск.
       </p>
@@ -44,7 +44,7 @@
       </div>
 
       <div class="grid grid-cols-[minmax(280px,0.85fr)_minmax(0,1.15fr)] gap-3 max-lg:grid-cols-1">
-        <section class="flex min-h-130 flex-col gap-10 overflow-hidden rounded-lg border border-border-subtle p-4" aria-labelledby="studio-title">
+        <section class="flex min-h-130 flex-col gap-10 overflow-hidden rounded-lg border border-border-subtle p-4 max-lg:min-h-0" aria-labelledby="studio-title">
           <span class="contact-card__index">D 001</span>
           <h3 class="contact-card__title" id="studio-title">099 Supply Desk</h3>
 
@@ -78,7 +78,7 @@
           </div>
         </section>
 
-        <section class="grid min-h-130 content-start gap-4 rounded-lg border border-border-subtle p-4" aria-labelledby="feedback-title">
+        <section class="grid min-h-130 content-start gap-4 rounded-lg border border-border-subtle p-4 max-lg:min-h-0" aria-labelledby="feedback-title">
           <div class="flex items-center justify-between gap-3 border-b border-border-subtle pb-3">
             <span class="contact-card__index">F 002</span>
             <h3 class="contact-card__title" id="feedback-title">Обратная связь</h3>
@@ -130,7 +130,7 @@
     </section>
   </main>
 
-  <footer class="border-t border-border-subtle py-3.75 pl-12">
+  <footer class="border-t border-border-subtle py-3.75 pl-4 sm:pl-6 lg:pl-12">
     <p class="caption uppercase">099 Supply / curated digital objects / 2026</p>
   </footer>
 </body>

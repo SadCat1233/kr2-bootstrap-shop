@@ -8,10 +8,10 @@
 </head>
 <body class="font-mono text-ink">
   <header class="sticky top-0 z-3 border-b border-border-soft bg-white">
-    <div class="flex w-full flex-row items-center bg-[#f8f9fa] px-12 py-2 tracking-[0.08em]">
+    <div class="flex w-full flex-wrap items-center gap-y-2 bg-[#f8f9fa] px-4 py-2 tracking-[0.08em] sm:px-6 lg:px-12">
       <a class="text-[32px] uppercase text-ink no-underline" href="../index.html">099</a>
-      <nav class="ml-auto">
-        <ul class="flex w-full flex-row gap-2">
+      <nav class="ml-auto max-sm:ml-0 max-sm:w-full">
+        <ul class="flex w-full flex-wrap justify-end gap-2 max-sm:justify-start max-sm:gap-1">
           <li>
             <a class="nav-link__active" href="catalog.html">Каталог</a>
           </li>
@@ -31,7 +31,7 @@
   <main>
     <section class="page-hero" aria-labelledby="catalog-title">
       <p class="page-hero__eyebrow">Object index</p>
-      <h1 class="page-hero__title max-md:text-[64px]" id="catalog-title">Каталог</h1>
+      <h1 class="page-hero__title" id="catalog-title">Каталог</h1>
       <p class="page-hero__text">
         Подборка черных объектов на белой плоскости: устройства, мерч, носители и интерфейсные компоненты.
       </p>
@@ -225,7 +225,7 @@
     </section>
   </main>
 
-  <footer class="border-t border-border-subtle py-3.75 pl-12">
+  <footer class="border-t border-border-subtle py-3.75 pl-4 sm:pl-6 lg:pl-12">
     <p class="caption uppercase">099 Supply / curated digital objects / 2026</p>
   </footer>
 </body>

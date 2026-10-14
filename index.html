@@ -8,10 +8,10 @@
 </head>
 <body class="font-mono text-ink">
   <header class="sticky top-0 z-3 border-b border-border-soft bg-white">
-    <div class="flex w-full flex-row items-center bg-[#f8f9fa] px-12 py-2 tracking-[0.08em]">
+    <div class="flex w-full flex-wrap items-center gap-y-2 bg-[#f8f9fa] px-4 py-2 tracking-[0.08em] sm:px-6 lg:px-12">
       <a class="text-[32px] uppercase text-ink no-underline" href="index.html">099</a>
-      <nav class="ml-auto">
-        <ul class="flex w-full flex-row gap-2">
+      <nav class="ml-auto max-sm:ml-0 max-sm:w-full">
+        <ul class="flex w-full flex-wrap justify-end gap-2 max-sm:justify-start max-sm:gap-1">
           <li>
             <a class="nav-link" href="pages/catalog.html">Каталог</a>
           </li>
@@ -29,11 +29,11 @@
     </div>
   </header>
   <main>
-    <section class="flex min-h-[calc(100dvh-64px)] items-end border-b border-border-soft px-12 pt-20 pb-12" aria-labelledby="hero-title">
-      <div class="grid w-full grid-cols-3 items-end gap-6">
-        <div class="col-span-2 tracking-[0.8px]">
+    <section class="flex min-h-[calc(100dvh-64px)] items-end border-b border-border-soft px-4 pt-12 pb-8 sm:px-6 sm:pt-16 sm:pb-12 lg:px-12 lg:pt-20" aria-labelledby="hero-title">
+      <div class="grid w-full grid-cols-1 items-end gap-8 lg:grid-cols-3 lg:gap-6">
+        <div class="tracking-[0.8px] lg:col-span-2">
           <p class="caption uppercase">Black-on-white catalog</p>
-          <h1 class="text-[140px] leading-[0.9] font-normal uppercase text-black" id="hero-title">099<br>Supply</h1>
+          <h1 class="text-[72px] leading-[0.9] font-normal uppercase text-black sm:text-[108px] lg:text-[140px]" id="hero-title">099<br>Supply</h1>
           <p class="mt-3 text-muted">
             Каталог монохромных mockup-объектов и интерфейсных компонентов для аккуратных цифровых витрин.
           </p>
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-end text-[220px] leading-[0.82] text-black" aria-label="099">
+        <div class="order-last flex justify-end gap-2 text-[80px] leading-[0.82] text-black sm:text-[120px] lg:order-none lg:flex-col lg:items-end lg:gap-0 lg:text-[220px]" aria-label="099">
           <span>0</span>
           <span>9</span>
           <span>9</span>
@@ -57,7 +57,7 @@
         <a class="button-ghost" href="pages/catalog.html">К товарам</a>
       </div>
 
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
           <article class="advantage-card">
             <span class="caption">A-001</span>
             <h3 class="mt-auto text-base leading-[1.2] font-normal uppercase text-ink">Единая сетка</h3>
@@ -84,7 +84,7 @@
         <a class="button-ghost" href="pages/catalog.html">Весь каталог</a>
       </div>
 
-      <div class="grid grid-cols-4 gap-3">
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <article class="product-card relative">
           <span class="product-card__badge absolute top-3 left-3">Хит</span>
           <div class="flex h-55 items-center justify-center">
@@ -167,8 +167,8 @@
         <a class="button-ghost" href="pages/order.html">Оставить заявку</a>
       </div>
 
-      <aside class="flex min-h-18 items-center justify-between rounded-lg border border-border-subtle p-3">
-        <p class="max-w-155text-xs leading-normal tracking-[0.8px] text-muted">Пишите для подбора mockup-набора или сборки витрины под конкретный запуск.</p>
+      <aside class="flex min-h-18 flex-col items-start justify-between gap-3 rounded-lg border border-border-subtle p-3 sm:flex-row sm:items-center">
+        <p class="max-w-155 text-xs leading-normal tracking-[0.8px] text-muted">Пишите для подбора mockup-набора или сборки витрины под конкретный запуск.</p>
         <a class="button-primary" href="mailto:hello@099.supply">hello@099.supply</a>
       </aside>
     </section>
@@ -178,7 +178,7 @@
     <span class="block -translate-y-1.25">+</span>
   </a>
 
-  <footer class="border-t border-border-subtle py-3.75 pl-12">
+  <footer class="border-t border-border-subtle py-3.75 pl-4 sm:pl-6 lg:pl-12">
     <p class="caption uppercase">099 Supply / curated digital objects / 2026</p>
   </footer>
 </body>
