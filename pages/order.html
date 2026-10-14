@@ -42,7 +42,11 @@
             <h2 class="contact-card__title" id="request-title">Форма заявки</h2>
           </div>
 
-          <form class="grid grid-cols-2 gap-3 max-md:grid-cols-1" action="#" method="post">
+          <div class="hidden border border-ink bg-ink px-3 py-2.5 text-xs leading-normal text-white target:block" id="order-alert" role="status" aria-live="polite" tabindex="-1">
+            Заявка отправлена. Мы свяжемся с вами в ближайшее время.
+          </div>
+
+          <form class="grid grid-cols-2 gap-3 max-md:grid-cols-1" action="#order-alert" method="get">
             <div class="contact-form__field">
               <label class="contact-form__label" for="order-name">Имя</label>
               <input class="contact-form__input" id="order-name" name="name" type="text" placeholder="Ваше имя" required>
